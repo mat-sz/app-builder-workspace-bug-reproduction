@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach -Api --topological-dev run build"
+  },
+  "packageManager": "yarn@4.5.0"
+}

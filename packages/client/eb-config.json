@@ -1,0 +1,35 @@
+{
+  "appId": "com.example.main",
+  "electronVersion": "32.1.2",
+  "directories": {
+    "output": "../../release/${version}"
+  },
+  "files": ["out"],
+
+  "win": {
+    "target": {
+      "target": "nsis",
+      "arch": ["x64"]
+    },
+    "artifactName": "${productName}-win32-${arch}-${version}.${ext}",
+    "asarUnpack": ["**/node_modules/is-odd/**/*"]
+  },
+
+  "mac": {
+    "target": {
+      "target": "dmg",
+      "arch": ["universal"]
+    },
+    "artifactName": "${productName}-darwin-${arch}-${version}.${ext}",
+    "asarUnpack": ["**/node_modules/is-odd/**/*"]
+  },
+
+  "linux": {
+    "target": {
+      "target": "AppImage",
+      "arch": ["x64"]
+    },
+    "artifactName": "${productName}-linux-${arch}-${version}.${ext}",
+    "asarUnpack": ["**/node_modules/is-odd/**/*"]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@example/client",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "main": "out/main.js",
+  "scripts": {
+    "build": "electron-builder --config eb-config.json"
+  },
+  "dependencies": {
+    "@example/common": "*"
+  },
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.8"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@example/common",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.js"
+    }
+  },
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
